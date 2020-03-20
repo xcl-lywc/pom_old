@@ -1,0 +1,96 @@
+/* 入党申请*/
+.rdsq{
+	margin: 0 auto;
+	width: 70%;
+	img{
+		border-radius: 50%;
+		border: 1px solid #ccc;
+		width: 40px;
+		height: 40px;
+	}
+	
+	.img-text{
+		margin-bottom: 30px;
+		p{
+			display: inline-block;
+			width: 100%;
+		}
+		span{
+			color: #fff;
+			padding: 10px 20px 30px;
+			border-radius: 10px;
+			width: calc(~"100% - 60px");
+			display: inline-block;
+			position: relative;
+		}
+		.blue-back{
+			background: #59b7ef;
+		}
+		.fafafa-back{
+			background: #ececec;
+			color: #434343;
+		}
+
+		span:before{
+			position: absolute;
+			content: "";
+			border: 8px solid #ececec;
+			
+		}
+		.blue-back:before{
+			right: -15px;
+			top: 10px;
+			border-color: transparent transparent transparent #59b7ef; 
+		}
+		.fafafa-back:before{
+			left: -16px;
+			top: 10px;
+			border-color: transparent #ececec transparent transparent; 
+		}
+		.no-arraw:before{
+			border-color: transparent;
+		}
+	}
+
+	.radio-wrapper{
+		text-align: center;
+		input[type='radio']{
+			margin: 0 3px 0 20px;
+			position: relative;
+			top: 3px;
+
+		}
+	}
+	.file-div{
+		margin-left: 80px;
+		button{
+			margin-top: 10px;
+		}
+	}
+}
+
+/* 从下往上移动显示 */
+.movetop{
+	position:relative;
+	-webkit-animation:mymovetop 2s ease both;
+	-moz-animation:mymovetop 2s ease both;
+	animation:mymovetop 2s ease both;
+}
+.movetop-aminate2{
+	-webkit-animation-delay:2s;
+}
+@-webkit-keyframes mymovetop /*Safari and Chrome*/{ from {top:100px; opacity: 0;}to {top:0px; opacity: 1;} }
+@-moz-keyframes mymovetop /*火狐*/{ from {top:100px; opacity: 0;}to {top:0px; opacity: 1;} }
+@keyframes mymovetop /*ie*/{ from {top:100px; opacity: 0;}to {top:0px; opacity: 1;} }
+
+/* 先隐藏后显示 */
+.hidetoshow-aminate{
+	-webkit-animation:hidetoshow 1s 4s ease both;
+	-moz-animation:hidetoshow 1s 4s ease both;
+	animation:hidetoshow 1s 4s ease both;
+}
+@-webkit-keyframes hidetoshow /*Safari and Chrome*/{ from {opacity: 0;}to {opacity: 1;} }
+@-moz-keyframes hidetoshow /*Safari and Chrome*/{ from {opacity: 0;}to {opacity: 1;} }
+@keyframes hidetoshow /*Safari and Chrome*/{ from {opacity: 0;}to {opacity: 1;} }
+
+

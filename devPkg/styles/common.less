@@ -1,0 +1,574 @@
+/*********************************************************************
+ * Created by deming-su on 2017-08-17                                *
+ *********************************************************************/
+@import "base";
+
+/* color 属性 */
+@red: #f00;
+@white: #fff;
+@white-deep: #f0f0f0;
+@whiteGray: #f5f5f5;
+@black: #333;
+@darkness: #2f3956;
+@black-deep: #666;
+@black-light: #999;
+@lightGrayWhite: #f4f4f4; //浅灰白色
+@denim: #1a2634;
+@peacock: #263548;
+@stone: #333; //字体颜色
+@stone-font: #adc2dc; //字体颜色
+@aegean: #2f4a69;
+@berry: #212e40;
+@sky: #354355;
+@spruce: #39506a;
+@grayBlue: #333;//panel头部查看更多按钮颜色
+@lightBlue: #CDDBE8; //快速定位导航颜色
+@aliceBlue: #ECF2FA; //背景颜色
+@pickColor: #D9E5F6; // 单个元素选中颜色
+@pickBorderColor: #578CD6; // 单个元素选中边框颜色
+@orange: #FF8419; //警告颜色
+@cadssetBlue: #8493A6;
+@steelBlue: #333; //字体颜色
+@azure: #DAE1E8; //进度条背景色
+@deepSkyBlue: #5BB4D8; //图表蓝色
+@skyBlue: #4FC2B9; // 图表天蓝色
+@salmon: #F47564; //图表淡红色
+@slateBlue: #9E90D7; //图表紫色
+@turquoise: #6FCB97; //图表绿宝色
+@salmon: #FF516C; //图表淡红色
+@lightGray: #F6F7FB; //panel浅灰色，主要用于panel header
+@snow: #D1D1D1; //线条颜色
+@snowLight: #DDD; //线条颜色
+@lavender: #CDDBE8; //表头背景颜色
+@bg-popup: #3D5571; //弹出窗口背景颜色
+@focus: #263548; //表单元素背景色
+@activeButton: #407DD1; //表单高亮按钮背景色
+@warningButton: #FF3838; //表单提醒按钮背景色
+@pop-border: #576C84; //弹窗口下边框颜色
+@border-table: #DCDCDC;//表格边框颜色
+@bg-table-header: #DAE1E8;//表格头部背景颜色
+@bg-thead: #F5F6FA;//表格表头背景颜色
+@tableb-btn-edit: #53D3E0;//表格修改按钮颜色
+@tableb-btn-delete: #F47564;//表格删除按钮颜色
+@bg-sidenav: #333743;//导航栏背景色
+@bg-sidetree: #41485B;//侧边栏树背景色
+@bg-selected:  #EDF2F8;//侧边栏选中项背景色
+@bg-hover:  #5b637a;//侧边栏选中项背景色
+@bg-switch-on:  #407DD1;//开关背景色-开
+@bg-switch-off:  #A2A7AC;//开关背景色-关
+@infoWarning:  #F8EADC;//开关背景色-关
+@warningBorder:  #E48F33;//开关背景色-关
+@warningText:  #B17432;//开关背景色-关
+@linkText:  #C52D2D;//开关背景色-关
+@px5: 5px;//像素5
+@px10: 10px;//像素10
+@px15: 15px;//像素15
+@px20: 20px;//像素20
+
+.font16{
+    font-size:16px!important;
+}
+.font20{
+    font-size:20px!important;
+}
+
+/* 页面中的通用变量 ----start----*/
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+/* margin 属性 */
+.margin(@top: 0, @right: 0, @bottom: 0, @left: 0) {
+    margin: @top @right @bottom @left!important;
+}
+.mar0{
+    margin: 0!important;
+}
+/* mar 5 */
+.mart5{
+    margin-top: @px5!important;
+}
+.marb5{
+    margin-bottom: @px5!important;
+}
+.marl5{
+    margin-left: @px5!important;
+}
+.marr5{
+    margin-right: @px5!important;
+}
+.mar5{
+    margin: @px5!important;
+}
+
+/* mar 10*/
+.mart10{
+    margin-top: @px10!important;
+}
+.marb10{
+    margin-bottom: @px10!important;
+}
+.marl10{
+    margin-left: @px10!important;
+}
+.marr10{
+    margin-right: @px10!important;
+}
+.mar10{
+    margin: @px10!important;
+}
+
+/* mar 15*/
+.mart15{
+    margin-top: @px15!important;
+}
+.marb15{
+    margin-bottom: @px15!important;
+}
+.marl15{
+    margin-left: @px15!important;
+}
+.marr15{
+    margin-right: @px15!important;
+}
+.mar15{
+    margin: @px15!important;
+}
+
+/* mar 20 */
+.mart20{
+    margin-top: @px20!important;
+}
+.marb20{
+    margin-bottom: @px20!important;
+}
+.marl20{
+    margin-left: @px20!important;
+}
+.marr20{
+    margin-right: @px20!important;
+}
+.mar20{
+    margin: @px20!important;
+}
+
+/* pad 5 */
+.padt5{
+    padding-top: @px5!important;
+}
+.padb5{
+    padding-bottom: @px5!important;
+}
+.padl5{
+    padding-left: @px5!important;
+}
+.padr5{
+    padding-right: @px5!important;
+}
+.pad5{
+    padding: @px5!important;
+}
+
+/* pad 10 */
+.padt10{
+    padding-top: @px10!important;
+}
+.padb10{
+    padding-bottom: @px10!important;
+}
+.padl10{
+    padding-left: @px10!important;
+}
+.padr10{
+    padding-right: @px10!important;
+}
+.pad10{
+    padding: @px10!important;
+}
+
+/* pad 15 */
+.padt15{
+    padding-top: @px15!important;
+}
+.padb15{
+    padding-bottom: @px15!important;
+}
+.padl15{
+    padding-left: @px15!important;
+}
+.padr15{
+    padding-right: @px15!important;
+}
+.pad15{
+    padding: @px15!important;
+}
+
+/* pad 20 */
+.padt20{
+    padding-top: @px20!important;
+}
+.padb20{
+    padding-bottom: @px20!important;
+}
+.padl20{
+    padding-left: @px20!important;
+}
+.padr20{
+    padding-right: @px20!important;
+}
+.pad20{
+    padding: @px20!important;
+}
+
+
+.mt(@size: 0) {
+    margin-top: @size;
+}
+.mr(@size: 0) {
+    margin-right: @size;
+}
+
+.mb(@size: 0) {
+    margin-bottom: @size;
+}
+
+.ml(@size: 0) {
+    margin-left: @size;
+}
+
+/* padding 属性 */
+.pad0(@top: 0, @right: 0, @bottom: 0, @left: 0) {
+    padding: @top @right @bottom @left !important;
+}
+
+.pt(@size: 0) {
+    padding-top: @size;
+}
+
+.pr(@size: 0) {
+    padding-right: @size;
+}
+
+.pb(@size: 0) {
+    padding-bottom: @size;
+}
+
+.pl(@size: 0) {
+    padding-left: @size;
+}
+
+/* display 属性*/
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* 尺寸 */
+.full-height{
+    height: 100%;
+}
+.full-width{
+    width: 100%;
+}
+.w16{
+    width: 16.665%;
+    display: block;
+    float: left;
+}
+.w20,
+.w30,
+.w40,
+.w50,
+.w60{
+    display: block;
+    float: left;
+}
+.w20{
+    width:20%;
+}
+.w30 {
+    width: 33.333%;
+}
+.w50{
+    width:50%;
+}
+.w60{
+    width:60%;
+}
+.w40{
+    width:40%;
+}
+
+.color(@color: @white) {
+    color: @color;
+}
+
+.bg-color(@color: @white) {
+    background-color: @color;
+}
+
+.bd-color(@color) {
+    border-color: @color;
+}
+
+/* border 属性 */
+.border(@width: 1px, @type: solid, @color: @border-table) {
+    border: @width @type @color;
+}
+
+/* 触摸样式 */
+.touch() {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* 文字截断 */
+.text-overflow-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*transition动画函数定义*/
+.transition(@type: all;@time: 0.2s;@status: ease-in-out) {
+    -webkit-transition: @type @time @status;
+    -o-transition: @type @time @status;
+    transition: @type @time @status;
+}
+
+/* transform */
+.transform(@type) {
+    -webkit-transform: @type;
+    -moz-transform: @type;
+    -ms-transform: @type;
+    -o-transform: @type;
+    transform: @type;
+}
+
+/*boxshadow样式函数*/
+.shadow(@size1: 0;@size2: 0;@size3: 20px;@color: rgba(51, 51, 51, .4)) {
+    -webkit-box-shadow: @size1 @size2 @size3 @color;
+    -moz-box-shadow: @size1 @size2 @size3 @color;
+    box-shadow: @size1 @size2 @size3 @color;
+}
+
+/* 倒角函数 */
+.border-radius(@size: 5px;) {
+    -webkit-border-radius: @size;
+    border-radius: @size;
+}
+
+/*透明度函数*/
+.opacity (@size: 0.5;@size2: 50) {
+    filter: alpha(opacity=@size2);
+    -moz-opacity: @size;
+    -khtml-opacity: @size;
+    -webkit-opacity: @size;
+    opacity: @size;
+}
+
+.font-size10 () {
+    font-size: 12px;
+    .transform(scale(.75));
+    *font-size: 9px;
+}
+/* 页面中的通用变量 ----end----*/
+
+html,
+body{
+    color:@stone;
+    /*height: 100%;*/
+    background-color: @whiteGray;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 2px;
+    height: 8px;
+    background-color: rgba(255,255,255,0.1);
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(128,128,128,0.8);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.1);
+} 
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(128,128,128,0.8);
+    background-color: #808080;
+}
+
+/* 多选框样式 ---start--- */
+.checkbox-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    .pl(26px);
+    color: @black-deep;
+    .touch();
+    &:before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        .border();
+        background-color: @white;
+    }
+    &.active:before {
+        background: @bg-switch-on url(../images/common/right.png) center center / 14px no-repeat;
+    }
+}
+/* 多选框样式 ---end--- */
+
+/* 弹出框样式 ---start--- */
+.resource-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    >.modal {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .bg-color(rgba(51, 55, 67, .8));
+    }
+    >.box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 480px;
+        height: 240px;
+        margin-top: -120px;
+        margin-left: -240px;
+        .shadow(@size1: 0;@size2: 6px;@size3: 12px;@color: rgba(51, 51, 51, .8));
+        .bg-color();
+        >.title {
+            position: relative;
+            width: 100%;
+            height: 48px;
+            line-height: 48px;
+            overflow: hidden;
+            padding-left: 20px;
+            .text-overflow-ellipsis();
+            .bg-color(@white-deep);
+            .color(@black-light);
+            font-size: 14px;
+            >.close {
+                float: right;
+                width: 52px;
+                height: 48px;
+                .touch();
+                background: url(../images/common/close.png) center center / 14px no-repeat;
+            }
+        }
+        >.body {
+            position: relative;
+            width: 100%;
+            min-height: 140px;
+            .pt(1px);
+        }
+        >.footer {
+            position: relative;
+            width: 100%;
+            height: 52px;
+            text-align: center;
+            >.btn {
+                display: inline-block;
+                width: 80px;
+                height: 32px;
+                line-height: 32px;
+                .color(@black);
+                text-align: center;
+                .border();
+                .bg-color(@white-deep);
+                .touch();
+                &.active {
+                    .mr(10px);
+                    .bg-color(@bg-switch-on);
+                    .color(@white);
+                }
+            }
+        }
+    }
+    >.drag-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+/* 弹出框样式 ---end--- */
+
+
+/* 重写element模态框 */
+.dialog{
+  .el-dialog__header{
+    background: @lightGrayWhite;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 60px;
+    padding: 0 20px;
+    .el-dialog__headerbtn{
+      height: 24px;
+      width: 24px;
+      background: url(../images/dialog_close_icon.png) no-repeat;
+      .el-dialog__close{
+        display: none;
+      }
+    }
+  }
+  .el-dialog__body{
+    /*padding: 0 20px 30px;*/
+    /*display: flex;*/
+  }
+}
+
+.back-button {
+  background: #409EFF;
+  padding: 7px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.warning-text {
+  color: #e6a23c!important;
+}
+.el-form .fill-width {
+  width: 100%!important;
+}
+.detail-form .el-form-item {
+  border-bottom: 1px solid #e6e6e6;
+}
+.date-picker-after {
+  position: absolute!important;
+  top: 0;
+  right: 0;
+  width: 80px;
+}
+.el-cascader-menu__item--extensible:after {
+  background: #fff;
+  right: 5px;
+}
